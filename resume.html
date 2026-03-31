@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume - Le Khanh Nguyen</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+        }
+
+        .resume-wrapper {
+            display: flex;
+            max-width: 1100px;
+            margin: 50px auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-padding {
+            padding: 40px;
+        }
+
+        .profile {
+            background: #2c3e50;
+            color: white;
+            width: 35%;
+            text-align: center;
+        }
+
+        .picture-resume-wrapper {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px auto;
+            position: relative;
+        }
+
+        .picture-resume img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+            object-fit: cover;
+        }
+
+        svg {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 0;
+            left: 0;
+        }
+
+        .name-wrapper h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .list-titles {
+            float: left;
+            width: 40%;
+            font-weight: bold;
+        }
+
+        .list-content {
+            float: left;
+            width: 60%;
+        }
+
+        .list-content a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-presentation {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .experience {
+            width: 65%;
+            background: white;
+        }
+
+        .experience-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .experience-wrapper {
+            margin-bottom: 30px;
+        }
+
+        .company-wrapper {
+            margin-top: 20px;
+        }
+
+        .time {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .job-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .company-description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .section-wrapper ul {
+            list-style: none;
+        }
+
+        .skill-percentage {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="resume-wrapper">
+
+        <section class="profile section-padding">
+
+            <div class="picture-resume-wrapper">
+                <div class="picture-resume">
+
+                    <span>
+                        <img src="images/profile.jpg" alt="Le Khanh Nguyen">
+                    </span>
+
+                    <svg viewBox="0 0 350 350">
+
+                        <defs>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0
+0 1 0 0 0
+0 0 1 0 0
+0 0 0 21 -9" result="cm" />
+                            </filter>
+                        </defs>
+
+                        <g filter="url(#goo)">
+                            <circle cx="171.5" cy="175.6" r="130" />
+
+                            <circle class="bubble0" cx="171.5" cy="175.6" r="122.7" />
+                            <circle class="bubble1" cx="171.5" cy="175.6" r="122.7" />
+                            <circle class="bubble2" cx="171.5" cy="175.6" r="122.7" />
+                            <circle class="bubble3" cx="171.5" cy="175.6" r="122.7" />
+                            <circle class="bubble4" cx="171.5" cy="175.6" r="122.7" />
+                            <circle class="bubble5" cx="171.5" cy="175.6" r="122.7" />
+                            <circle class="bubble6" cx="171.5" cy="175.6" r="122.7" />
+                            <circle class="bubble7" cx="171.5" cy="175.6" r="122.7" />
+                            <circle class="bubble8" cx="171.5" cy="175.6" r="122.7" />
+                            <circle class="bubble9" cx="171.5" cy="175.6" r="122.7" />
+                            <circle class="bubble10" cx="171.5" cy="175.6" r="122.7" />
+                        </g>
+
+                    </svg>
+                </div>
+            </div>
+
+            <div class="name-wrapper">
+                <h1>Le Khanh <br> Nguyen</h1>
+            </div>
+
+            <div class="contact-info clearfix">
+
+                <ul class="list-titles">
+                    <li>Call</li>
+                    <li>Mail</li>
+                    <li>Web</li>
+                    <li>Home</li>
+                </ul>
+
+                <ul class="list-content">
+                    <li>+84 971902173</li>
+                    <li>114035194@live.asia.edu.tw</li>
+                    <li><a href="#">Asia University</a></li>
+                    <li>Viet Nam</li>
+                </ul>
+
+            </div>
+
+            <div class="contact-presentation">
+                <p>
+                    I have a deep passion with numbers and the fluctuations in economic systems.
+                    I enjoy analyzing data and understanding how global events influence markets and financial activity.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="experience section-padding">
+
+            <h3 class="experience-title">Education & Experience</h3>
+
+            <div class="experience-wrapper">
+
+                <div class="company-wrapper">
+                    <div class="experience-title">Asia University</div>
+                    <div class="time">Graduate</div>
+                </div>
+
+                <div class="job-wrapper">
+                    <div class="experience-title">Academic Background</div>
+                    <div class="company-description">
+                        <p>I graduated from Asia University with a strong interest in economics and numerical analysis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="company-wrapper">
+                    <div class="experience-title">Top-tier International Business</div>
+                    <div class="time">2-Year Internship</div>
+                </div>
+
+                <div class="job-wrapper">
+                    <div class="experience-title">Intern</div>
+                    <div class="company-description">
+                        <p>I completed a two-year internship in one of the world's leading businesses, gaining
+                            experience in analysis and professional work environments.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-wrapper">
+
+                <h3 class="section-title">Skills</h3>
+
+                <ul>
+                    <li class="skill-percentage">Photoshop</li>
+                    <li class="skill-percentage">Analysis</li>
+                </ul>
+
+            </div>
+
+            <div class="section-wrapper">
+
+                <h3 class="section-title">Hobbies</h3>
+
+                <p>
+                    I enjoy researching numbers and studying how money flows through the economy such as consumption and
+                    investment.
+                </p>
+
+                <p>
+                    I am also interested in how events like wars or global crises affect financial systems.
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script>
+
+        const bubbles = document.querySelectorAll('[class^="bubble"]');
+
+        bubbles.forEach((bubble) => {
+
+            let angle = Math.random() * Math.PI * 2;
+            let radius = 5 + Math.random() * 5;
+
+            function animate() {
+
+                angle += 0.02;
+
+                let x = 171.5 + Math.cos(angle) * radius;
+                let y = 175.6 + Math.sin(angle) * radius;
+
+                bubble.setAttribute("cx", x);
+                bubble.setAttribute("cy", y);
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+
+        });
+
+    </script>
+
+</body>
+
+</html>
