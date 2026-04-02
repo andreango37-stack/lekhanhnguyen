@@ -156,9 +156,22 @@
 <body>
 
     <!-- Background Music -->
-    <audio id="bg-music" loop>
+    <audio id="bg-music" autoplay loop>
         <source src="music.mp3" type="audio/mpeg">
     </audio>
+
+    <script>
+        const music = document.getElementById("bg-music");
+
+        // try autoplay
+        music.volume = 0.4;
+        music.play().catch(() => {
+            // if autoplay blocked, start after first click
+            document.addEventListener("click", () => {
+                music.play();
+            }, { once: true });
+        });
+    </script>
 
     <div class="resume-wrapper">
 
